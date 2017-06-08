@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## site is published at http://heggy.me/fcc-jquery/
 
 You can use the [editor on GitHub](https://github.com/heggy231/fcc-jquery/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
