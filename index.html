@@ -11,7 +11,9 @@ $(document).ready(function(){
     $("#target1").css("color", "red");
     $("#target1").prop("disabled", true);
     // method chaining jQuery Clone your target5 element and append it to your left-well
-    $("#target5").clone().appendTo("#left-well");      
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange"); 
 }
 </script>
 
