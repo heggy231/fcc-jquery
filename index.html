@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="animate.css">
 <script>
 // ensure script only loads as soon as browser is loaded
-$(document).ready(function()){
+$(document).ready(function(){
     $("button").addClass("animated bounce");
     $(".well").addClass("animated shake");
     $("#target3").addClass("animated fadeOut");
@@ -10,7 +10,7 @@ $(document).ready(function()){
     // target1 element should have red text.
     $("#target1").css("color", "red");
     $("#target1").prop("disabled", true);
-    // Clone your target5 element and append it to your left-well
+    // method chaining jQuery Clone your target5 element and append it to your left-well
     $("#target5").clone().appendTo("#left-well");      
 }
 </script>
