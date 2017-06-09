@@ -1,49 +1,66 @@
-<script src="jquery.js"></script>
-<link rel="stylesheet" href="animate.css">
-<script>
-// ensure script only loads as soon as browser is loaded
-$(document).ready(function(){
-    $("button").addClass("animated bounce");
-    $(".well").addClass("animated shake");
-    $("#target3").addClass("animated fadeOut");
-    $("button").removeClass("btn-default");
-    // target1 element should have red text.
-    $("#target1").css("color", "red");
-    $("#target1").prop("disabled", true);
-    // method chaining jQuery Clone your target5 element and append it to your left-well
-    $("#target5").clone().appendTo("#left-well");
-    $("#target1").parent().css("background-color", "red");
-    $("#right-well").children().css("color", "orange"); 
-    $(".target:nth-child(2)").addClass("animated bounce");
-    // jQuery index begins 0 therefore selecting even # is odd 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>I just foundout jQuery is fun!</title>
+  <meta charset = "UTF-8">
+  <script src="jquery.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styleMe.css">
+  <link rel="icon" type="image/gif" href="https://cdn.glitch.com/57bc3237-9d5f-442e-88f6-04e92041b5f7%2FpikaRun.gif?1497030320530">
 
-    $(".target:even").addClass("animated shake");
-    // make the entire body fade out with hinge effect
-    $("body").addClass("animated hinge");
+  <link rel="stylesheet" href="animate.css">
+  <script>
+    // ensure script only loads as soon as browser is loaded
+    $(document).ready(function(){
+        $("button").addClass("animated bounce");
+        $(".well").addClass("animated shake");
+        $("#target3").addClass("animated fadeOut");
+        $("button").removeClass("btn-default");
+        // target1 element should have red text.
+        $("#target1").css("color", "red");
+        $("#target1").prop("disabled", true);
+        // method chaining jQuery Clone your target5 element and append it to your left-well
+        $("#target5").clone().appendTo("#left-well");
+        $("#target1").parent().css("background-color", "red");
+        $("#right-well").children().css("color", "orange"); 
+        $(".target:nth-child(2)").addClass("animated bounce");
+        // jQuery index begins 0 therefore selecting even # is odd 
 
-});
-</script>
+        $(".target:even").addClass("animated shake");
+        // make the entire body fade out with hinge effect
+        // $("body").addClass("animated hinge");
 
-<!-- Only change code above this line. -->
+    });
+  </script>
 
-<div class="container-fluid">
-  <h3 class="text-primary text-center">jQuery Playground</h3>
-  <div class="row">
-    <div class="col-xs-6">
-      <h4>#left-well</h4>
-      <div class="well" id="left-well">
-        <button class="btn btn-default target" id="target1">#target1</button>
-        <button class="btn btn-default target" id="target2">#target2</button>
-        <button class="btn btn-default target" id="target3">#target3</button>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class ="jumbotron">
+      <h3 class="text-primary text-center">jQuery Playground</h3>
+      <div class="row">
+        <div class="col-xs-6">
+          <h4>#left-well</h4>
+          <div class="well" id="left-well">
+            <button class="btn btn-default target" id="target1">#target1</button>
+            <button class="btn btn-default target" id="target2">#target2</button>
+            <button class="btn btn-default target" id="target3">#target3</button>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <h4>#right-well</h4>
+          <div class="well" id="right-well">
+            <button class="btn btn-default target" id="target4">#target4</button>
+            <button class="btn btn-default target" id="target5">#target5</button>
+            <button class="btn btn-default target" id="target6">#target6</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-xs-6">
-      <h4>#right-well</h4>
-      <div class="well" id="right-well">
-        <button class="btn btn-default target" id="target4">#target4</button>
-        <button class="btn btn-default target" id="target5">#target5</button>
-        <button class="btn btn-default target" id="target6">#target6</button>
-      </div>
-    </div>
+    </div>  
   </div>
-</div>
+</body>
+</html>
